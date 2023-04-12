@@ -6,6 +6,10 @@ An API for a social network web application where users can share their thoughts
 
 MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, you’ll use several of the technologies that social networking platforms use in their full-stack applications.
 
+- [Usage](#usage)
+- [Credits](#credits)
+- [Walkthrough Video](#Walkthrough-Video)
+
 ## Usage
 
 The following animation shows GET routes to return all users and all thoughts being tested in Insomnia:
@@ -24,12 +28,12 @@ The following animation shows the POST and DELETE routes for a user’s friend l
 
 ![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./Assets/18-nosql-homework-demo-04.gif)
 
-### Walkthrough Video:
-
-A [walkthrough video](https://www.loom.com/share/e5a60b937f634470924aed84e144f708) that demonstrates the functionality of the social media API
-
 ### Credits
 
 - Uses the [Mongoose package](https://www.npmjs.com/package/mongoose) to connect to a MongoDB database.
+
+### Walkthrough-Video
+
+A [walkthrough video](https://www.loom.com/share/e5a60b937f634470924aed84e144f708) that demonstrates the functionality of the social media API
 
 ### Thank you
