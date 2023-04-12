@@ -22,7 +22,7 @@ module.exports = {
   // Create a thought
   createThought(req, res) {
     Thoughts.create(req.body)
-   
+
       .then((thought) => {
         console.log("in the creat though");
         console.log("this sis the user id : ", req.body.userId);
@@ -91,7 +91,7 @@ module.exports = {
   removeReaction(req, res) {
     Thoughts.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $pull: { reactions: { reactionId: req.params.reactionId } } },
+      { $pull: { reactions: { reactionId: req.params.reactionId } } }, //reactions from modelSchema
       { runValidators: true, new: true }
     )
       .then((thought) =>

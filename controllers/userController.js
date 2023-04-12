@@ -69,8 +69,8 @@ module.exports = {
       { $addToSet: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     )
-      .populate("thoughts")
-      .populate("friends")
+      .populate("thoughts") //populate list of thoughts
+      .populate("friends") //populate list of friends
       .then((user) =>
         !user
           ? res.status(404).json({ message: "No user found with that ID :(" })
